@@ -80,7 +80,7 @@ form {
 .form {
     padding: 20px;
     margin: 20px;
-    border: 1px solid rgb(168, 20, 20);
+    /* border: 1px solid rgb(168, 20, 20); */
     border-radius: 10px;
 }
 
@@ -111,5 +111,13 @@ button {
 
     .resident .img {
         width: 80%;
+    }
+
+    /* Responsive Textarea */
+    .form textarea {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 10px;
+        margin-bottom: 10px;
     }
 }
