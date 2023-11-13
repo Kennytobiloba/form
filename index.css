@@ -9,7 +9,7 @@ body {
     color: black;
 }
 h1{
-    color: black;
+    color:  rgb(168, 20, 20);
     font-size: 16px;
 }
 
@@ -45,6 +45,7 @@ form {
     flex-direction: column;
     align-items: center;
     margin-bottom: 20px;
+   
 }
 
 .resident h1 {
@@ -58,7 +59,7 @@ form {
     
 }
 .form p{
-    font-size: 16px;
+    font-size: 10px;
     color: black;
     font-weight: 100;
 }
@@ -147,6 +148,10 @@ button {
 .name .city{
     width: 45%;
 }
+.rent{
+    text-align: center;
+    font-size: 18px;
+}
 
 
 .name .zip{
@@ -200,5 +205,15 @@ form{
 .name .current{
     width: 100%;
     /* background-color: red; */
+}
+
+.resident .img {
+    width: 40%;
+    margin-top: 20px;
+}
+
+.resident .img img {
+    width: 100%;
+    border-radius: 8px;
 }
 }
