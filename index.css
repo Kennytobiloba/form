@@ -57,6 +57,11 @@ form {
     color: black;
     
 }
+.form p{
+    font-size: 16px;
+    color: black;
+    font-weight: 100;
+}
 
 .resident .img {
     width: 50%;
@@ -87,10 +92,10 @@ form {
 }
 
 .form {
-    padding: 20px;
-    margin: 20px;
+    padding: 10px;
+    margin: 20px 20px 0px 20px;
     /* border: 1px solid rgb(168, 20, 20); */
-    border-radius: 10px;
+    
 }
 
 .form h1 {
