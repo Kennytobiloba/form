@@ -6,6 +6,11 @@
 
 body {
     font-family: 'Arial', sans-serif;
+    color: black;
+}
+h1{
+    color: black;
+    font-size: 16px;
 }
 
 .rental {
@@ -46,7 +51,11 @@ form {
     width: 100%;
     text-align: center;
     margin-top: 20px;
-    color: rgb(168, 20, 20);
+    color:black;
+}
+.form h1{
+    color: black;
+    
 }
 
 .resident .img {
@@ -67,14 +76,14 @@ form {
 }
 
 .name div {
-    flex: 1;
+    width: 30%;
 }
 
 .name input {
     width: 100%;
     padding: 10px;
     box-sizing: border-box;
-    margin-bottom: 10px;
+    
 }
 
 .form {
@@ -85,7 +94,7 @@ form {
 }
 
 .form h1 {
-    font-size: 20px;
+    font-size: 16px;
     margin-bottom: 10px;
 }
 
@@ -102,16 +111,61 @@ button {
     border-radius: 5px;
     cursor: pointer;
 }
+.name .current{
+    width: 80%;
+    /* background-color: red; */
+}
+.name .zip{
+    width: 40%;
+}
+.name .city{
+    width: 40%;
+}
+.name .date{
+    width: 50%;
+}
 
 /* Media Queries for Responsiveness */
 @media screen and (max-width: 768px) {
-    .rental {
-        width: 90%;
+    
+.rental {
+    width: 100%;
+    margin: 0;
+   
+    padding: 0px;
+   
+   
+}
+.name .date{
+    width: 100%;
+}
+.name .city{
+    width: 45%;
+}
+
+
+.name .zip{
+    width: 100%;
+}
+    .form{
+        margin: 0;
+        width: 100%;
     }
 
     .resident .img {
         width: 80%;
     }
+    
+.name div {
+    width: 100%;
+    
+}
+
+.container {
+    display: flex;
+    justify-content:left;
+   
+}
 
     /* Responsive Textarea */
     .form textarea {
@@ -120,4 +174,26 @@ button {
         padding: 10px;
         margin-bottom: 10px;
     }
+    
+.name {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+    margin-top: 10px;
+}
+.firstname{
+    
+    /* background-color: red; */
+}
+form{
+    width: 100%;
+}
+
+ .name .first{
+    width: 45%;
+}
+.name .current{
+    width: 100%;
+    /* background-color: red; */
+}
 }
