@@ -17,18 +17,18 @@
     </div>
     <h1 class="rent">Residential Rental Application Form</h1>
      <hr>
-     <form action="">
-    <div class="form" >
+     <form  id="contactForm">
+    <div class="form"  >
 
     <!-- application form Names  -->
     <h1>Application's Name</h1>
                <div class="name nametwo">
                 <div  class="first">
-                    <input type="text" required><br>
+                    <input type="text" name="firstName" id="firstname" required><br>
                 <p >First Name</p>
                 </div>
                 <div   class="first">
-                    <input type="text" required><br>
+                    <input type="text" name="lastName" id="lastName" required><br>
                 <p>Last Name</p>
                 </div>
                
@@ -42,12 +42,12 @@
                <div class="name">
                 <div style="width: 45%;">
                 <h1 >Phone Number</h1>
-                <input type="number" required><br>
+                <input type="number" id="phoneNumber" required><br>
                <p>Please enter a valid phone number.</p>
                 </div>
                 <div style="width: 45%;">
                 <h1>Email</h1>
-                <input type="email" required><br>
+                <input type="email" name="email"  id="email"   required><br>
                 <p>example@example.com</p>
                 </div>
                </div>     
@@ -64,12 +64,12 @@
                 <div class="name">
                  <div style="width: 45%;">
                      <h1>Date of Birth</h1>
-                     <input type="text" placeholder=" MM / DD / YYYY" required><br>
+                     <input type="text" placeholder=" MM / DD / YYYY"    required><br>
                  
                  </div>
                  <div style="width: 45%;">
                   <h1>Social Security #</h1>
-                  <input type="number" required><br>
+                  <input type="number" id="socialSecurity" required><br>
                   
                   </div>
                 </div>     
@@ -88,7 +88,7 @@
                         <div class="name">
                          <div style="width: 45%;">
                         <h1>Driver License or State ID #</h1>
-                         <input type="number" required><br>
+                         <input type="number" id="driverLicense" required><br>
                         
                          </div>
                          
@@ -155,7 +155,7 @@
                  <div class="form" >
                
             <div class="name">
-            <div>
+            <div style="width: 45%;">
              <h1>Number of persons who will occupy the property </h1>
              <input type="number" placeholder="eg, 23" required>
                                     
@@ -207,7 +207,7 @@
     <div class="name">
     <div  class="current">
      <h1>Current Address</h1>
-    <input type="number" style="width:100%;" required>
+    <input type="text" style="width:100%;"  id="address" required>
     <p>Street Address</p>
      </div>
                                                  
@@ -225,12 +225,120 @@
             <div class="name">
              <div class="city">
                                                             
-          <input type="text" style="width: 100%;"><br>
+         
+          
+          
+          <select id="state" style="width: 100%; padding: 10px;"  required>
+            <option value="" disabled selected>Select your state</option>
+            <option value="AL">Alabama</option>
+            <option value="AK">Alaska</option>
+            <option value="AZ">Arizona</option>
+            <option value="AR">Arkansas</option>
+            <option value="CA">California</option>
+            <option value="CO">Colorado</option>
+            <option value="CT">Connecticut</option>
+            <option value="DE">Delaware</option>
+            <option value="FL">Florida</option>
+            <option value="GA">Georgia</option>
+            <option value="HI">Hawaii</option>
+            <option value="ID">Idaho</option>
+            <option value="IL">Illinois</option>
+            <option value="IN">Indiana</option>
+            <option value="IA">Iowa</option>
+            <option value="KS">Kansas</option>
+            <option value="KY">Kentucky</option>
+            <option value="LA">Louisiana</option>
+            <option value="ME">Maine</option>
+            <option value="MD">Maryland</option>
+            <option value="MA">Massachusetts</option>
+            <option value="MI">Michigan</option>
+            <option value="MN">Minnesota</option>
+            <option value="MS">Mississippi</option>
+            <option value="MO">Missouri</option>
+            <option value="MT">Montana</option>
+            <option value="NE">Nebraska</option>
+            <option value="NV">Nevada</option>
+            <option value="NH">New Hampshire</option>
+            <option value="NJ">New Jersey</option>
+            <option value="NM">New Mexico</option>
+            <option value="NY">New York</option>
+            <option value="NC">North Carolina</option>
+            <option value="ND">North Dakota</option>
+            <option value="OH">Ohio</option>
+            <option value="OK">Oklahoma</option>
+            <option value="OR">Oregon</option>
+            <option value="PA">Pennsylvania</option>
+            <option value="RI">Rhode Island</option>
+            <option value="SC">South Carolina</option>
+            <option value="SD">South Dakota</option>
+            <option value="TN">Tennessee</option>
+            <option value="TX">Texas</option>
+            <option value="UT">Utah</option>
+            <option value="VT">Vermont</option>
+            <option value="VA">Virginia</option>
+            <option value="WA">Washington</option>
+            <option value="WV">West Virginia</option>
+            <option value="WI">Wisconsin</option>
+            <option value="WY">Wyoming</option>
+        </select>
             <p>City</p>
             </div>
             <div style="width: 40%;">
                                                            
-            <input type="text" style="width: 100%;" required><br>
+            <!-- <input type="text" style="width: 100%;" required><br> -->
+            <select id="city" style="width: 100%; padding: 10px;" required>
+              <option value="" disabled selected>Select your state</option>
+              <option value="AL">Alabama</option>
+              <option value="AK">Alaska</option>
+              <option value="AZ">Arizona</option>
+              <option value="AR">Arkansas</option>
+              <option value="CA">California</option>
+              <option value="CO">Colorado</option>
+              <option value="CT">Connecticut</option>
+              <option value="DE">Delaware</option>
+              <option value="FL">Florida</option>
+              <option value="GA">Georgia</option>
+              <option value="HI">Hawaii</option>
+              <option value="ID">Idaho</option>
+              <option value="IL">Illinois</option>
+              <option value="IN">Indiana</option>
+              <option value="IA">Iowa</option>
+              <option value="KS">Kansas</option>
+              <option value="KY">Kentucky</option>
+              <option value="LA">Louisiana</option>
+              <option value="ME">Maine</option>
+              <option value="MD">Maryland</option>
+              <option value="MA">Massachusetts</option>
+              <option value="MI">Michigan</option>
+              <option value="MN">Minnesota</option>
+              <option value="MS">Mississippi</option>
+              <option value="MO">Missouri</option>
+              <option value="MT">Montana</option>
+              <option value="NE">Nebraska</option>
+              <option value="NV">Nevada</option>
+              <option value="NH">New Hampshire</option>
+              <option value="NJ">New Jersey</option>
+              <option value="NM">New Mexico</option>
+              <option value="NY">New York</option>
+              <option value="NC">North Carolina</option>
+              <option value="ND">North Dakota</option>
+              <option value="OH">Ohio</option>
+              <option value="OK">Oklahoma</option>
+              <option value="OR">Oregon</option>
+              <option value="PA">Pennsylvania</option>
+              <option value="RI">Rhode Island</option>
+              <option value="SC">South Carolina</option>
+              <option value="SD">South Dakota</option>
+              <option value="TN">Tennessee</option>
+              <option value="TX">Texas</option>
+              <option value="UT">Utah</option>
+              <option value="VT">Vermont</option>
+              <option value="VA">Virginia</option>
+              <option value="WA">Washington</option>
+              <option value="WV">West Virginia</option>
+              <option value="WI">Wisconsin</option>
+              <option value="WY">Wyoming</option>
+          </select>
             <p>State</p>
             </div>
                                                          
@@ -242,11 +350,16 @@
            <div class="form" >
                
            <div class="name">
-          <div  class="zip">
+          <div  class="zip" style="width:30%;">
                                                                
-        <input type="number" style="width:100%;" required><br>
+        <input type="number" style="width:100%;"  id="zipCode"  required><br>
          <p>Zip Code</p>
           </div>
+          <div  class="zip" style="width:15%;" >
+                                                               
+            <input type="number" style="width:100%;" required><br>
+             <p>Ext</p>
+              </div>
                                                              
                                                              
         </div>     
@@ -259,11 +372,12 @@
         <div class="form" >
                
          <div class="name">
-        <div style="width: 100%;">
+        <div style="width: 60%;">
         <h4>Reason of leaving</h4>
         <textarea name="" id="" cols="20" rows="2"></textarea>
                                                                 
         </div>
+        
         </div>     
         </div>
        <!-- application reason for leaving end-->
@@ -296,8 +410,8 @@
           <div class="">
              <div>
          <h4>Have you been convicted of felony before?</h4>
-        <div style="display: flex; gap: 10px; margin-top: 10px; margin-bottom: 10px;"><input type="radio" > <p>YES</p><br></div>
-         <div style="display: flex; gap: 10px;"><input type="radio" > <p>N0</p><br></div>
+        <div style="display: flex; gap: 10px; margin-top: 10px; margin-bottom: 10px;"><input type="radio" name="felony" > <p>YES</p><br></div>
+         <div style="display: flex; gap: 10px;"><input type="radio" name="felony" > <p>N0</p><br></div>
                                                                             
                                                                         
                                                                         
@@ -312,8 +426,8 @@
         <div class="">
         <div>
        <h4>Have you been evicted before? </h4>
-     <div style="display: flex; gap: 10px; margin-top: 10px; margin-bottom: 10px;"><input type="radio" > <p>YES</p><br></div>
-     <div style="display: flex; gap: 10px;"><input type="radio" > <p>N0</p><br></div>
+     <div style="display: flex; gap: 10px; margin-top: 10px; margin-bottom: 10px;"><input type="radio" name="evicted" > <p>YES</p><br></div>
+     <div style="display: flex; gap: 10px;"><input type="radio" name="evicted" > <p>N0</p><br></div>
                                                                                 
                                                                             
                                                                             
@@ -327,7 +441,7 @@
 <div class="">
 <div>
   <h4>Have you been convicted of any crime before? </h4>
-<div style="display: flex; gap: 10px; margin-top: 10px; margin-bottom: 10px;"><input type="radio" > <p>YES</p><br></div>
+<div style="display: flex; gap: 10px; margin-top: 10px; margin-bottom: 10px;"><input type="radio"  > <p>YES</p><br></div>
 <div style="display: flex; gap: 10px;"><input type="radio" > <p>N0</p><br></div>
                                                                                     
                                                                                 
@@ -353,13 +467,13 @@
     <div class="">
     <div>
   <h4>Payment Method:</h4>
- <div style="display: flex; gap: 10px; margin-top: 10px; "><input type="radio"  required> <p>Cashapp</p><br></div>
+ <div style="display: flex; gap: 10px; margin-top: 10px; "><input type="radio" name="payment"  required> <p>Cashapp</p><br></div>
  
-<div style="display: flex; gap: 10px;"><input type="radio" required > <p>Zelle</p><br></div>
- <div style="display: flex; gap: 10px;"><input type="radio" required> <p>PayPal</p><br></div>
-<div style="display: flex; gap: 10px;"><input type="radio" required> <p>Venmo</p><br></div>
- <div style="display: flex; gap: 10px;"><input type="radio"  required> <p>Chime</p><br></div>
- <div style="display: flex; gap: 10px;"><input type="radio"  required> <p>Debit/CreditCard</p><br></div>
+<div style="display: flex; gap: 10px;"><input type="radio" name="payment"  id="payment" required > <p>Zelle</p><br></div>
+ <div style="display: flex; gap: 10px;"><input type="radio" name="payment" id="payment"   required> <p>PayPal</p><br></div>
+<div style="display: flex; gap: 10px;"><input type="radio" name="payment" id="payment"  required> <p>Venmo</p><br></div>
+ <div style="display: flex; gap: 10px;"><input type="radio" name="payment" id="payment"    required> <p>Chime</p><br></div>
+ <div style="display: flex; gap: 10px;"><input type="radio" name="payment"  id="payment"  required> <p>Debit/CreditCard</p><br></div>
                                                                                                 
                                                                                             
                                                                                             
@@ -383,7 +497,7 @@
 </div>
 
                                                                                                 
-     <button>Submit</button>
+     <button type="submit">Submit</button>
 
                                                                         
 
@@ -392,6 +506,7 @@
             
 </div>
     </div>
-    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+     <script src="index.js" ></script>
 </body>
 </html>
